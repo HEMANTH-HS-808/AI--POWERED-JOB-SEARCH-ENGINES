@@ -1,0 +1,26 @@
+{
+  "name": "skillsync",
+  "version": "1.0.0",
+  "description": "AI-powered career path engine for students",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client"
+  },
+  "keywords": [
+    "career",
+    "ai",
+    "jobs",
+    "mern"
+  ],
+  "author": "SkillSync Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
