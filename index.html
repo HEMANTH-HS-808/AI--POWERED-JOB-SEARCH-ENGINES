@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Job Search Engine</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 800px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+            text-align: left;
+        }
+        
+        .feature {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            animation: fadeIn 1.5s ease;
+        }
+        
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .feature p {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .tech-stack {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .tech-stack h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .tech-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .badge {
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .btn {
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .status {
+            margin-top: 40px;
+            padding: 20px;
+            background: #fff3cd;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .status h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .status p {
+            color: #856404;
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .subtitle {
+                font-size: 1.1em;
+            }
+            .container {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 AI-Powered Job Search Engine</h1>
+        <p class="subtitle">Comprehensive career-planning platform for students built with MERN stack</p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🔍 Smart Job Search</h3>
+                <p>Find jobs matching your specific skills with AI-powered recommendations</p>
+            </div>
+            <div class="feature">
+                <h3>🤖 AI Career Advisor</h3>
+                <p>Get personalized career guidance powered by Google Gemini AI</p>
+            </div>
+            <div class="feature">
+                <h3>📄 Resume Analysis</h3>
+                <p>Upload your resume and get AI-powered skill extraction and job matching</p>
+            </div>
+            <div class="feature">
+                <h3>🌎 Location-Based</h3>
+                <p>Search jobs and companies in all 50 US states and international locations</p>
+            </div>
+        </div>
+        
+        <div class="tech-stack">
+            <h2>🛠️ Tech Stack</h2>
+            <div class="tech-badges">
+                <span class="badge">React.js</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">Express.js</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">Google Gemini AI</span>
+                <span class="badge">Tailwind CSS</span>
+                <span class="badge">JWT Auth</span>
+                <span class="badge">REST API</span>
+            </div>
+        </div>
+        
+        <div class="status">
+            <h3>⚠️ Deployment Status</h3>
+            <p><strong>This is the project landing page.</strong> The full application requires a backend server and database. To run the complete app, follow the deployment instructions in the repository.</p>
+        </div>
+        
+        <div class="buttons">
+            <a href="https://github.com/HEMANTH-HS-808/AI--POWERED-JOB-SEARCH-ENGINES" class="btn btn-primary" target="_blank">
+                View on GitHub
+            </a>
+            <a href="https://github.com/HEMANTH-HS-808/AI--POWERED-JOB-SEARCH-ENGINES/blob/main/DEPLOY_NOW.md" class="btn btn-secondary" target="_blank">
+                Deployment Guide
+            </a>
+        </div>
+        
+        <div style="margin-top: 40px; color: #999; font-size: 0.9em;">
+            <p>📚 Complete documentation available in the repository</p>
+            <p>💡 Free deployment options: Render, Vercel, Railway</p>
+            <p>⭐ Star the repository if you find it helpful!</p>
+        </div>
+    </div>
+</body>
+</html>
