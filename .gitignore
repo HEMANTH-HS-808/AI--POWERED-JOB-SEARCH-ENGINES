@@ -10,7 +10,7 @@ node_modules/
 .env.production.local
 
 # Production builds
-/client/build
+# /client/build  # Commented out to include build in GitHub
 /server/dist
 
 # Logs
